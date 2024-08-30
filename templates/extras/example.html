@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dynamic Drop-down Menu Example</title>
+    <script>
+      function updateMenu() {
+        var firstMenu = document.getElementById("firstMenu");
+        var secondMenu = document.getElementById("secondMenu");
+        
+        // Get the selected option from the first menu
+        var selectedOption = firstMenu.options[firstMenu.selectedIndex].value;
+        
+        // Clear the options from the second menu
+        secondMenu.options.length = 0;
+        
+        // Populate the second menu with options based on the selected option from the first menu
+        if (selectedOption == "Option 1") {
+          var option1 = document.createElement("option");
+          option1.text = "Option 1A";
+          secondMenu.add(option1);
+          
+          var option2 = document.createElement("option");
+          option2.text = "Option 1B";
+          secondMenu.add(option2);
+        }
+        else if (selectedOption == "Option 2") {
+          var option1 = document.createElement("option");
+          option1.text = "Option 2A";
+          secondMenu.add(option1);
+          
+          var option2 = document.createElement("option");
+          option2.text = "Option 2B";
+          secondMenu.add(option2);
+          
+          var option3 = document.createElement("option");
+          option3.text = "Option 2C";
+          secondMenu.add(option3);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Dynamic Drop-down Menu Example</h1>
+    
+    <label for="firstMenu">Select an option:</label>
+    <select id="firstMenu" onchange="updateMenu()">
+      <option value="Option 1">Option 1</option>
+      <option value="Option 2">Option 2</option>
+    </select>
+    
+    <br>
+    
+    <label for="secondMenu">Select a sub-option:</label>
+    <select id="secondMenu">
+      <option value=""></option>
+    </select>
+  </body>
+</html>

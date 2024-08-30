@@ -1,0 +1,107 @@
+
+#mainNav {
+    background-color: black !important;
+  }
+  
+  .navbar .nav-link,
+  .navbar .navbar-brand,
+  .navbar .btn-primary {
+    color: white;
+  }
+  
+  .navbar .btn-primary {
+    background-color: #fdd61f;
+  }
+  
+  .navbar .btn-primary {
+    color: black;
+  }
+  
+  .navbar .nav-link:hover {
+    color: #fdd61f;
+  }
+  
+  .navbar .btn-primary:hover {
+    background-color: white;
+    color: black;
+  }
+
+.weather-card {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  height: 300px;
+  box-sizing: border-box;
+}
+.weather-card{
+  width: 30%;
+}
+
+
+
+.card-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.row {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.col {
+  flex: 1;
+  padding: 5px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.temperature {
+  font-size: 1.2rem;
+}
+
+.conditions {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45%;
+  height: 60%;
+  transform: translate(10%,30%);
+  background-color: rgba(1, 51, 10, 0.5); /* Adjust opacity as needed */
+  padding: 20px;
+  color: #333; /* Text color */
+  font-family: Inter, sans-serif; /* Choose your font */
+  z-index: 1; /* Ensure the overlay is on top */
+  color: #fff;
+  text-align: center;
+}
+
+.overlay h1 {
+  margin-top: 100px;
+  font-size: 4em;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  font-size: 1.2em;
+}
+
+
